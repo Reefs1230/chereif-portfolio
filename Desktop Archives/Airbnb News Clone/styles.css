@@ -1,0 +1,289 @@
+.container-fluid, .container {
+  padding: 0 24px;
+}
+
+@media (min-width: 1200px) {
+  #navbarMenu {
+    display: none !important;
+  }
+
+  #xlNavbar .nav-link:hover {
+    background-color: rgb(243, 243, 243);
+    border-radius: 20px;
+  }
+}
+
+#navbar {
+  z-index: 1;
+}
+
+#xlNavbar .nav-link {
+  color: black;
+  font-weight: 700;
+}
+
+#xlNavbar .navbar-brand, #xlNavbar .nav-link {
+  line-height: 35px;
+}
+
+#xlNavbar .nav-link {
+  font-size: 14px;
+}
+
+#navbarMenu .nav-link {
+  padding: 12px 0;
+}
+
+#mainArtText {
+  margin: auto;
+}
+
+#mainArtText a, #latestNews a {
+  color: black;
+}
+
+#mainArtText a:hover, #latestNews a:hover {
+  text-decoration: underline;
+}
+
+#newsArt {
+  margin: 10px 0;
+}
+
+#newsArt img {
+  border-radius: 15px;
+}
+
+#icons .d-flex {
+  justify-content: center;
+  align-items: center;
+}
+
+#icons {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+#icons i {
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+#icons i {
+  font-size: 25px;
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+  transition: 0.25s;
+}
+
+#icons i:hover {
+  transform: scale(1.1);
+  background-color: lightgrey;
+}
+
+#icon-header p {
+  font-size: 20px;
+}
+
+.icon-article {
+  margin-right: 24px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 24px;
+}
+
+.icon-article h4, .icon-article p {
+  padding: 0 15px;
+}
+
+.icon-article p {
+  color: #8d8d8d;
+}
+
+.icon-article a {
+  color: black;
+  text-decoration: none;
+}
+
+#latest-icons {
+  padding: 60px 0;
+}
+
+.nav-pills .nav-link.active {
+  color: black;
+  background-color: rgb(212, 212, 212) !important;
+  border: 2px solid black;
+}
+
+.nav-pills a {
+  color: black;
+  border: 1px solid rgb(139, 139, 139);
+  border-radius: 20px !important;
+  margin: 0 5px;
+}
+
+.nav-pills a:hover, .viewbtn:hover {
+  transform: scale(1.1);
+  transition: 0.125s;
+}
+
+.topicArticle img {
+  border-radius: 15px;
+}
+
+.topicArticle a {
+  color: black;
+}
+
+.topicArticle p {
+  color: #727272;
+}
+
+.viewbtn {
+  border: 1px solid black;
+  border-radius: 14px;
+}
+
+
+#founderArt {
+  background-color: white;
+  border-radius: 35px;
+  padding: 0;
+}
+
+#founderImg img {
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+#founderLtr h4 {
+  color: grey;
+}
+
+.readbtn {
+  border-radius: 12px;
+  background-color: rgb(36, 36, 36);
+  padding: 10px 20px;
+}
+
+#footer {
+  padding-top: 15px;
+  border-top: 1px solid lightgrey;
+}
+
+#columnContainer {
+  line-height: 2;
+}
+
+#columnContainer h6 {
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+#footerColumn {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer li a, footer li a:hover {
+  color: black;
+}
+
+@media (max-width: 1100px) {
+  #footerNest {
+    align-items: center;
+    flex-direction: column;
+
+    .footer-links {
+      flex-direction: column;
+      order: 2;
+    }
+  }
+}
+
+  
+#footerNest {
+  border-top: 1px solid #ddd;
+  padding: 24px 0;
+  width: 100vw;
+}
+
+.footer-icons {
+  font-size: 25px;
+}
+
+.footer-icons a, #icons a {
+  color: black;
+}
+
+.footer-links {
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.footer-links a {
+  color: black;
+}
+
+.footer-links a::before {
+  content: "";
+  display: inline-block;
+  text-align: center;
+  width: 10px;
+}
+
+@media (max-width: 768px) {
+  #founderArt {
+    display: grid;
+    gap: 0 16px;
+  }
+
+  #founderLtr {
+    padding: 25px 30px;
+    margin: auto;
+    text-align: center;
+  }
+
+  #founderImg{
+  order: 2;
+  }
+
+  #founderImg img {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  }
+
+  #footerNest {
+    align-items: flex-start;
+  }
+
+  .topicArticle {
+    display: flex;
+    margin: 15px 0;
+    padding: 0;
+  }
+
+  .topicArticle img {
+    width: 50%;
+  }
+
+  #topicText {
+    margin: 0 15px;
+  }
+}
+
+@media (max-width: 997px) {
+  #columnContainer {
+    border-bottom: 1px solid #ddd;
+  }
+}
